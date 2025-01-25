@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function (event){
 
         const email = document.getElementById('email').value.trim();
 
-        const passWord = document.getElementById('password').value.trim();
+        const password = document.getElementById('password').value.trim();
 
         let isValid = true;
         let messages = [];
@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function (event){
             messages.push("enter a valid email");
         }
 
-        if(passWord.length < 8){
+        if(password.length < 8){
             isValid = false;
             messages.push("password less than 8 characters!");
         }
