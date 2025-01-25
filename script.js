@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function (event){
     form.addEventListener("submit", (event) => {
         event.preventDefault();
 
-        const userName = document.getElementById('username').value.trim();
+        const username = document.getElementById('username').value.trim();
 
         const email = document.getElementById('email').value.trim();
 
@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function (event){
         let isValid = true;
         let messages = [];
 
-        if(userName.length < 3){
+        if(username.length < 3){
             isValid = false;
             messages.push("username less than 3 characters!");
         }
