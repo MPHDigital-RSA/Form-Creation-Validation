@@ -15,8 +15,6 @@ async function fetchUserData () {
         const userList = document.createElement('ul');
 
         users.forEach(user => {
-            console.log(user.username);
-
             const li = document.createElement('li');
 
             li.textContent = user.username;
